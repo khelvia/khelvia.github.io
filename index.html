@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportSphere - Master the Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.395.0/dist/umd/lucide.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .gold-text {
+            background: linear-gradient(to right, #fbbf24, #d97706);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border {
+            border-color: rgba(251, 191, 36, 0.3);
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 text-gray-200 antialiased selection:bg-amber-500/30 selection:text-amber-200">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 glass border-b-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-white">
+                SPORT<span class="text-amber-500">SPHERE</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features"
+                    class="text-sm font-medium text-gray-400 hover:text-white transition tracking-wide">FEATURES</a>
+                <a href="#for-players"
+                    class="text-sm font-medium text-gray-400 hover:text-white transition tracking-wide">PLAYERS</a>
+                <a href="#for-venues"
+                    class="text-sm font-medium text-gray-400 hover:text-white transition tracking-wide">VENUES</a>
+                <a href="about.html"
+                    class="text-sm font-medium text-gray-400 hover:text-white transition tracking-wide">ABOUT</a>
+                <a href="blog.html"
+                    class="text-sm font-medium text-gray-400 hover:text-white transition tracking-wide">BLOG</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="signin.html" class="text-sm font-medium text-gray-300 hover:text-white transition">Sign In</a>
+                <a href="#" id="open-modal-btn-header"
+                    class="bg-white text-gray-950 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                    Join Waitlist
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 bg-[url('images/signin_bg.png')] bg-cover bg-center opacity-20">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-950/80 via-gray-950/50 to-gray-950">
+        </div>
+        <div class="absolute inset-0 hero-pattern opacity-20"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold tracking-widest uppercase mb-6">
+                The Future of Sports
+            </span>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-8 tracking-tight">
+                Elevate Your <br>
+                <span class="gold-text italic pr-2">Game.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+                Experience the ultimate sports ecosystem. AI-powered matchmaking, professional coaching,
+                and premium
+                venue booking—all in one sophisticated platform.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="#" id="open-modal-btn-hero1"
+                    class="w-full sm:w-auto bg-amber-500 text-gray-950 font-bold px-8 py-4 rounded-full hover:bg-amber-400 transition shadow-[0_0_30px_rgba(245,158,11,0.4)]">
+                    Start Your Journey
+                </a>
+                <a href="#features"
+                    class="w-full sm:w-auto px-8 py-4 rounded-full border border-gray-700 text-white hover:bg-white/5 transition flex items-center justify-center gap-2 group">
+                    Explore Features <i data-lucide="arrow-down"
+                        class="w-4 h-4 group-hover:translate-y-1 transition"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-32 bg-gray-950 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Crafted for Excellence</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Discover tools designed to transform how you
+                    play, train,
+                    and
+                    compete.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="glass p-8 rounded-2xl hover:border-amber-500/30 transition duration-500 group cursor-pointer"
+                    onclick="openFeatureModal('matchmaking')">
+                    <div
+                        class="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="zap" class="text-amber-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">AI Matchmaking</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Our "GameSense" engine analyzes your play style to curate the perfect match,
+                        every time.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass p-8 rounded-2xl hover:border-amber-500/30 transition duration-500 group cursor-pointer"
+                    onclick="openFeatureModal('video')">
+                    <div
+                        class="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="video" class="text-amber-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Video Analysis</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Upload your gameplay. Let our AI break down your form with professional
+                        precision.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass p-8 rounded-2xl hover:border-amber-500/30 transition duration-500 group cursor-pointer"
+                    onclick="openFeatureModal('rewards')">
+                    <div
+                        class="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="award" class="text-amber-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Elite Rewards</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Earn points for every game. Unlock exclusive gear and access to premium venues.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass p-8 rounded-2xl hover:border-amber-500/30 transition duration-500 group cursor-pointer"
+                    onclick="openFeatureModal('market')">
+                    <div
+                        class="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="shopping-bag" class="text-amber-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pro Market</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Access a curated marketplace for top-tier equipment and professional coaching.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Players Section -->
+    <section id="for-players" class="py-32 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-amber-500/20 blur-3xl rounded-full opacity-20">
+                    </div>
+                    <img src="images/ai_coach_analysis.jpg" alt="Player Experience"
+                        class="relative rounded-2xl shadow-2xl border border-gray-800 grayscale hover:grayscale-0 transition duration-700">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">For the <span
+                            class="text-amber-500">Athlete.</span></h2>
+                    <p class="text-gray-400 text-lg mb-8 font-light">
+                        Whether you're a weekend warrior or a rising star, SportSphere provides the
+                        infrastructure
+                        you
+                        need to succeed.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-amber-500 w-6 h-6 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Seamless Booking</h4>
+                                <p class="text-gray-500 text-sm mt-1">Instant access to 50+ premium
+                                    sports venues.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-amber-500 w-6 h-6 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Skill Matching</h4>
+                                <p class="text-gray-500 text-sm mt-1">Play with people who challenge
+                                    you, not crush
+                                    you.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Venues Section -->
+    <section id="for-venues" class="py-32 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full opacity-20">
+                    </div>
+                    <img src="images/football_turf_night.jpg" alt="Venue Dashboard"
+                        class="relative rounded-2xl shadow-2xl border border-gray-800 grayscale hover:grayscale-0 transition duration-700">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">For the <span
+                            class="text-amber-500">Venue.</span></h2>
+                    <p class="text-gray-400 text-lg mb-8 font-light">
+                        Maximize your occupancy and streamline operations with our enterprise-grade
+                        management
+                        suite.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <i data-lucide="bar-chart-2" class="text-amber-500 w-6 h-6 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Smart Analytics</h4>
+                                <p class="text-gray-500 text-sm mt-1">Data-driven insights to optimize
+                                    pricing and
+                                    slots.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="users" class="text-amber-500 w-6 h-6 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Community Growth</h4>
+                                <p class="text-gray-500 text-sm mt-1">Direct connection to thousands of
+                                    active
+                                    players.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-gray-950 border-t border-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="text-3xl font-bold text-white mb-6 md:mb-0">
+                    SPORT<span class="text-amber-500">SPHERE</span>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="about.html"
+                        class="text-gray-500 hover:text-amber-400 transition text-sm tracking-widest uppercase">About</a>
+                    <a href="careers.html"
+                        class="text-gray-500 hover:text-amber-400 transition text-sm tracking-widest uppercase">Careers</a>
+                    <a href="blog.html"
+                        class="text-gray-500 hover:text-amber-400 transition text-sm tracking-widest uppercase">Blog</a>
+                    <a href="privacy.html"
+                        class="text-gray-500 hover:text-amber-400 transition text-sm tracking-widest uppercase">Privacy</a>
+                </div>
+            </div>
+            <div class="text-center text-gray-600 text-xs">
+                &copy; 2025 SportSphere, Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Feature Details Modal -->
+    <div id="feature-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 hidden transition-opacity duration-300">
+        <div class="relative bg-gray-900 rounded-2xl shadow-2xl w-full max-w-lg p-8 border border-gray-800">
+            <button id="close-feature-modal-btn"
+                class="absolute top-4 right-4 text-gray-500 hover:text-white transition">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div id="feature-icon-container"
+                    class="w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <!-- Icon injected here -->
+                </div>
+                <h3 id="feature-title" class="text-3xl font-bold text-white mb-2 font-serif"></h3>
+            </div>
+
+            <p id="feature-description" class="text-gray-400 text-lg leading-relaxed mb-8 text-center font-light">
+            </p>
+
+            <button id="feature-cta-btn"
+                class="w-full bg-amber-500 hover:bg-amber-400 text-gray-900 font-bold py-4 rounded-xl transition shadow-lg flex items-center justify-center gap-2">
+                Join Waitlist for Early Access <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Waitlist Modal -->
+    <div id="waitlist-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 hidden transition-opacity duration-300">
+        <div class="relative bg-gray-900 rounded-2xl shadow-2xl w-full max-w-md p-8 border border-gray-800">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-white transition">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <div id="modal-form-content">
+                <h3 class="text-2xl font-bold text-white mb-2 font-serif">Join the Elite</h3>
+                <p class="text-gray-400 text-sm mb-6">Secure your spot for early access.</p>
+                <form id="waitlist-form" class="space-y-4">
+                    <div>
+                        <input type="text" name="name" required placeholder="Full Name"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:ring-1 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                    </div>
+                    <div>
+                        <input type="email" name="email" required placeholder="Email Address"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:ring-1 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                    </div>
+                    <div>
+                        <input type="text" name="city" required placeholder="City"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:ring-1 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-amber-500 hover:bg-amber-400 text-gray-900 font-bold py-3 rounded-lg transition shadow-lg">
+                        Request Access
+                    </button>
+                </form>
+            </div>
+
+            <div id="modal-success-content" class="hidden text-center py-8">
+                <div class="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="check" class="w-8 h-8 text-green-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">Welcome Aboard</h3>
+                <p class="text-gray-400 text-sm">We'll be in touch soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Waitlist Modal Logic
+        const modal = document.getElementById('waitlist-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const waitlistForm = document.getElementById('waitlist-form');
+        const formContent = document.getElementById('modal-form-content');
+        const successContent = document.getElementById('modal-success-content');
+
+        const openModalBtns = [
+            document.getElementById('open-modal-btn-header'),
+            document.getElementById('open-modal-btn-hero1')
+        ];
+
+        const openModal = () => {
+            modal.classList.remove('hidden');
+            formContent.classList.remove('hidden');
+            successContent.classList.add('hidden');
+            waitlistForm.reset();
+        };
+
+        const closeModal = () => {
+            modal.classList.add('hidden');
+        };
+
+        openModalBtns.forEach(btn => {
+            if (btn) btn.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+        });
+
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+        waitlistForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formContent.classList.add('hidden');
+            successContent.classList.remove('hidden');
+        });
+
+        // Feature Modal Logic
+        const featureModal = document.getElementById('feature-modal');
+        const closeFeatureModalBtn = document.getElementById('close-feature-modal-btn');
+        const featureTitle = document.getElementById('feature-title');
+        const featureDesc = document.getElementById('feature-description');
+        const featureIconContainer = document.getElementById('feature-icon-container');
+        const featureCtaBtn = document.getElementById('feature-cta-btn');
+
+        const featureData = {
+            "matchmaking": {
+                "title": "AI Matchmaking",
+                "description": "Stop playing mismatched games. Our 'GameSense' engine analyzes 50+ data points including your past performance, preferred venues, and play style to find your perfect opponent.",
+                "icon": "zap"
+            },
+            "video": {
+                "title": "Video Analysis",
+                "description": "Your personal coach, available 24/7. Upload match footage and get frame-by-frame breakdown of your technique, with AI-generated drills to improve your weak points.",
+                "icon": "video"
+            },
+            "rewards": {
+                "title": "Elite Rewards",
+                "description": "Play more, earn more. Every match you play earns you 'SpherePoints' redeemable for exclusive Nike & Adidas gear, free court time, and tournament entries.",
+                "icon": "award"
+            },
+            "market": {
+                "title": "Pro Market",
+                "description": "The ultimate equipment store. Curated recommendations based on your skill level and playing style. Plus, book sessions with certified professional coaches directly.",
+                "icon": "shopping-bag"
+            }
+        };
+
+        const openFeatureModal = (featureKey) => {
+            const data = featureData[featureKey];
+            if (!data) return;
+
+            featureTitle.textContent = data.title;
+            featureDesc.textContent = data.description;
+            featureIconContainer.innerHTML = `<i data-lucide="${data.icon}" class="text-amber-400 w-8 h-8"></i>`;
+            lucide.createIcons();
+
+            featureModal.classList.remove('hidden');
+        };
+
+        const closeFeatureModal = () => {
+            featureModal.classList.add('hidden');
+        };
+
+        closeFeatureModalBtn.addEventListener('click', closeFeatureModal);
+        featureModal.addEventListener('click', (e) => { if (e.target === featureModal) closeFeatureModal(); });
+
+        // Connect Feature Modal CTA to Waitlist Modal
+        featureCtaBtn.addEventListener('click', () => {
+            closeFeatureModal();
+            openModal();
+        });
+
+        // Expose to global scope for inline onclick handlers
+        window.openFeatureModal = openFeatureModal;
+
+    </script>
+</body>
+
+</html>

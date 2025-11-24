@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SportSphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.395.0/dist/umd/lucide.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .gold-text {
+            background: linear-gradient(to right, #fbbf24, #d97706);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 text-gray-200 antialiased selection:bg-amber-500/30 selection:text-amber-200">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 glass border-b-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">
+                SPORT<span class="text-amber-500">SPHERE</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html"
+                    class="text-sm font-medium text-gray-400 hover:text-white transition tracking-wide">HOME</a>
+                <a href="about.html" class="text-sm font-medium text-white transition tracking-wide">ABOUT</a>
+                <a href="careers.html"
+                    class="text-sm font-medium text-gray-400 hover:text-white transition tracking-wide">CAREERS</a>
+                <a href="blog.html"
+                    class="text-sm font-medium text-gray-400 hover:text-white transition tracking-wide">BLOG</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="signin.html" class="text-sm font-medium text-gray-300 hover:text-white transition">Sign In</a>
+                <a href="#"
+                    class="bg-white text-gray-950 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                    Join Waitlist
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 md:pt-52 md:pb-32 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <span class="text-amber-500 font-bold tracking-widest uppercase text-xs mb-4 block">Our Story</span>
+                    <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
+                        Building the Future of <span class="gold-text italic">Sports.</span>
+                    </h1>
+                    <p class="text-lg text-gray-400 leading-relaxed font-light">
+                        SportSphere was born from a simple frustration: why is it so hard to find a good game? We're a
+                        team of athletes, engineers, and dreamers dedicated to connecting players and venues through
+                        technology.
+                    </p>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-amber-500/20 blur-3xl rounded-full opacity-20"></div>
+                    <img src="images/about_team.png" alt="SportSphere Team"
+                        class="relative rounded-2xl shadow-2xl border border-gray-800 grayscale hover:grayscale-0 transition duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Mission</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-2xl hover:border-amber-500/30 transition duration-500">
+                    <div class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="users" class="text-amber-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white text-center mb-3">Connect Players</h3>
+                    <p class="text-gray-400 text-center text-sm leading-relaxed">Building communities where anyone can
+                        find a game, anytime, anywhere.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:border-amber-500/30 transition duration-500">
+                    <div class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="trophy" class="text-amber-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white text-center mb-3">Elevate Skills</h3>
+                    <p class="text-gray-400 text-center text-sm leading-relaxed">Democratizing professional-grade
+                        coaching through AI technology.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:border-amber-500/30 transition duration-500">
+                    <div class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="heart" class="text-amber-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white text-center mb-3">Promote Health</h3>
+                    <p class="text-gray-400 text-center text-sm leading-relaxed">Making sports a daily habit for
+                        millions of Indians.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-gray-950 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600 text-xs">
+                &copy; 2025 SportSphere, Inc. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
