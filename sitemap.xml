@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://khelvia.github.io/sitemap.xml" />
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://khelvia.github.io/</loc>
+    <lastmod>2025-11-25</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://khelvia.github.io/about.html</loc>
+    <lastmod>2025-11-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://khelvia.github.io/careers.html</loc>
+    <lastmod>2025-11-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://khelvia.github.io/blog.html</loc>
+    <lastmod>2025-11-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://khelvia.github.io/signin.html</loc>
+    <lastmod>2025-11-25</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://khelvia.github.io/signup.html</loc>
+    <lastmod>2025-11-25</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://khelvia.github.io/privacy.html</loc>
+    <lastmod>2025-11-25</lastmod>
+    <priority>0.50</priority>
+  </url>
+</urlset>
