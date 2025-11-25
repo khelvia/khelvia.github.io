@@ -160,7 +160,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-32 bg-gray-950 relative">
+    <section id="features" class="py-10 bg-gray-950 relative">
         <div class="container mx-auto px-6">
             <div class="text-center mb-20">
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Crafted for Excellence</h2>
@@ -228,8 +228,31 @@
         </div>
     </section>
 
+    <!-- Coming soon for Booking -->
+    <section class="py-10 bg-gray-950 border-y border-gray-950">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-4xl font-bold text-amber-500 tracking-widest uppercase mb-5">Coming soon for Booking</p>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🏸
+                    Badminton Courts</span>
+                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">⚽
+                    Football Turfs</span>
+                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🏏 Box
+                    Cricket</span>
+                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🎾
+                    Tennis Courts</span>
+                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🏓
+                    Table Tennis</span>
+                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🏊
+                    Swimming Pools</span>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- For Players Section -->
-    <section id="for-players" class="py-32 relative overflow-hidden">
+    <section id="for-players" class="py-10 relative overflow-hidden">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 relative">
@@ -316,25 +339,69 @@
             </div>
         </div>
     </section>
-    <section class="py-10 bg-gray-950 border-y border-gray-900">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-sm font-bold text-amber-500 tracking-widest uppercase mb-6">Coming soon for Booking</p>
-            <div class="flex flex-wrap justify-center gap-4 md:gap-8">
-                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🏸
-                    Badminton Courts</span>
-                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">⚽
-                    Football Turfs</span>
-                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🏏 Box
-                    Cricket</span>
-                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🎾
-                    Tennis Courts</span>
-                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🏓
-                    Table Tennis</span>
-                <span class="text-gray-400 font-medium px-4 py-2 bg-gray-900 rounded-full border border-gray-800">🏊
-                    Swimming Pools</span>
+
+    <section class="py-10 bg-gray-950 relative overflow-hidden">
+        <!-- FAQ -->
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Frequently Asked <span
+                        class="text-amber-500">Questions</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Everything you need to know about the Khelvia ecosystem.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div
+                    class="border border-gray-800 rounded-2xl bg-gray-900/30 overflow-hidden transition-all duration-300 hover:border-amber-500/30 hover:bg-gray-900/50">
+                    <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium text-white group-hover:text-amber-500 transition-colors">How
+                            can I book sports venues online?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-gray-500 group-hover:text-amber-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-gray-400 leading-relaxed border-t border-gray-800/50 pt-4">
+                        Khelvia lets you book badminton courts, football turfs, and box cricket grounds easily.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    class="border border-gray-800 rounded-2xl bg-gray-900/30 overflow-hidden transition-all duration-300 hover:border-amber-500/30 hover:bg-gray-900/50">
+                    <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium text-white group-hover:text-amber-500 transition-colors">What
+                            is AI sports matchmaking?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-gray-500 group-hover:text-amber-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-gray-400 leading-relaxed border-t border-gray-800/50 pt-4">
+                        Khelvia uses AI to match players based on skill and performance.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    class="border border-gray-800 rounded-2xl bg-gray-900/30 overflow-hidden transition-all duration-300 hover:border-amber-500/30 hover:bg-gray-900/50">
+                    <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium text-white group-hover:text-amber-500 transition-colors">Is
+                            Khelvia a sports video analysis platform?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-gray-500 group-hover:text-amber-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-gray-400 leading-relaxed border-t border-gray-800/50 pt-4">
+                        Yes, Khelvia offers smart video coaching tools to improve player skills.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="py-20 bg-gray-950 border-t border-gray-900">
         <div class="container mx-auto px-6">
@@ -524,6 +591,25 @@
 
         // Expose to global scope for inline onclick handlers
         window.openFeatureModal = openFeatureModal;
+
+        // FAQ toggle logic
+        function toggleFAQ(button) {
+            // the answer div is the next element after the button
+            const answer = button.nextElementSibling;
+            // the chevron icon inside the button
+            const icon = button.querySelector('[data-lucide="chevron-down"]');
+
+            // toggle visibility
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');      // show
+                icon.classList.add('rotate-180');       // rotate icon
+            } else {
+                answer.classList.add('hidden');         // hide
+                icon.classList.remove('rotate-180');    // reset icon
+            }
+        }
+
+
 
     </script>
 </body>
