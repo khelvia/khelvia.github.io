@@ -1,155 +1,56 @@
-SportSphere: Digital Marketing & SEO Strategy
-
-
-This document outlines the complete strategy for SportSphere to launch nationally and capture top SEO rankings, beating established competitors like Hudle and Playo.
-
-Our core strategy is a scalable, city-by-city rollout. We will not try to win "India" at once. We will win Bangalore, then Mumbai, then Delhi, scaling our proven local SEO playbook to dominate India's top 10 metro markets.
-
-1. Our Unique Selling Proposition (USP)
-
-AI "GameSense" Matchmaking: Hyper-personalized game finding.
-
-"SkillSphere" AI Video Coach: Free, scannable video analysis.
-
-"Sphere Rewards" Engine: Gamification to build loyalty.
-
-"Sphere Pro" Marketplace: A one-stop shop for coaches, physios, and gear.
-
-2. Target Audience
-
-Primary: Tech-savvy young professionals and college students (Ages 18-35) in urban India (Tier 1 & 2 cities) who play "social" sports like cricket, badminton, football, and pickleball.
-
-Secondary: Venue owners across India looking to increase off-peak bookings and optimize revenue.
-
-3. SEO Keyword Strategy
-
-Our national victory is built on winning thousands of local searches. While competitors fight for broad keywords, we will dominate high-intent, long-tail, and local keywords in every new city we enter.
-
-Keyword Type
-
-Example Keywords
-
-Difficulty
-
-Our Strategy
-
-Broad (Head)
-
-"book badminton court india"
-
-Very High
-
-Low priority. We will rank for this eventually as our local authority (in all cities) adds up.
-
-Local (Money)
-
-"badminton courts near Koramangala"
-
-Medium
-
-OUR #1 PRIORITY. This strategy is a scalable playbook. We will create landing pages for every city, neighborhood, and venue. (e.g., "...near Bandra", "...near Whitefield").
-
-Long-Tail (Niche)
-
-"AI badminton coach app"
-
-Low
-
-SECRET WEAPON. This is a national-level keyword that bypasses local competition. It captures users before they even look for a court.
-
-Competitor-Based
-
-"Hudle vs SportSphere"
-
-Low
-
-Create comparison pages to capture users nationally who are looking for alternatives.
-
-Content (Informational)
-
-"how to improve badminton smash"
-
-Low
-
-Attract a national audience with our AI Coach feature via blog posts.
-
-4. On-Page SEO Plan (The index.html File)
-
-Title Tag: SportSphere - Book Sports Venues & AI Coach | India
-
-Meta Description: "Don't just find a court. Find the perfect game in your city with AI matchmaking, improve your skills with our AI Video Coach, and get rewarded. Join SportSphere India."
-
-Headings:
-
-H1: Don't Just Book a Court in India. Master the Game. (Strong national H1)
-
-H2s: Features You Won't Find Anywhere Else, Smarter Tools for Indian Venues.
-
-Content: All content is now national. (In a real dynamic site, we would auto-change "India" to the user's detected city, e.g., "Master the Game in Mumbai").
-
-Image Alt-Tags: All alt-tags are updated for a national audience (e.g., SportSphere App Interface for India).
-
-5. Content Marketing Plan (Driving Traffic)
-
-This becomes a scalable content factory. We create content "templates" that can be localized for each new city.
-
-Local Listicles (Scalable SEO):
-
-Create a template for "The 5 Best [Sport] Venues in [Neighborhood]".
-
-Launch Content: "The 5 Best Football Turfs in Indiranagar, Bangalore", "The 5 Best Badminton Courts in Bandra, Mumbai", etc.
-
-Feature-Driven (National SEO):
-
-"We Analyzed 100 Badminton Serves with AI: Here's What We Learned"
-
-"How Our 'GameSense' AI Finds You a Perfect Game in 30 Seconds"
-
-Informational (National SEO):
-
-"Can't Find a Padel Partner? Here's the New Way"
-
-"5 Simple Drills to Improve Your Football Dribbling (Analyzed by AI)"
-
-Social Media (Video - for TikTok/Instagram):
-
-Run geo-targeted ads on Instagram showing a "POV" video of finding a game in 3 clicks in that specific city.
-
-6. Local SEO Plan (Our "National Rollout Playbook")
-
-This is the core of our expansion strategy.
-
-Google Business Profile (GBP): Create a "SportSphere India HQ" profile. As we open small offices, create new GBPs for "SportSphere Mumbai," "SportSphere Delhi," etc.
-
-Local Landing Pages (The Engine):
-
-Tier 1: City Pages (/bangalore, /mumbai)
-
-Tier 2: Neighborhood Pages (/mumbai/bandra, /delhi/gurgaon)
-
-Tier 3: Venue Pages (/mumbai/bandra-arena)
-This structured approach allows us to capture searches at every level of intent.
-
-Local Partnerships (Link Building): Create a playbook for our launch team in each new city:
-
-Partner with local university sports blogs for a feature.
-
-Offer a 10% student discount at local colleges.
-
-Get featured in local "Top 10 Weekend Activities" blogs (e.g., LBB, What's Hot).
-
-7. Measuring Success (For the Professor)
-
-For the class, we will track these KPIs to prove our scalable strategy works:
-
-Primary KPI: Join the Waitlist clicks, segmented by city. (This proves which markets have the most demand).
-
-SEO KPIs:
-
-Keyword Rank: Track our ranking for 5 "Local (Money)" keywords in each of our target launch cities.
-
-Organic Traffic: How many users visit our local landing pages (e.g., /bangalore).
-
-Business KPI:
-
-Venue Acquisition: Track how many venues sign up from each new city.
+# SEO & Performance Strategy
+
+## Goal
+Achieve higher search engine rankings and faster page load times for Khelvia.
+
+## SEO Strategy Status
+
+### 1. Keyword Research & Targeting
+**Primary Keywords:**
+- [x] Sports matchmaking
+- [x] AI sports coaching
+- [x] Venue booking
+- [x] Sports video analysis
+- [x] Badminton/Football/Cricket community
+
+**Secondary Keywords:**
+- [x] Find sports partners
+- [x] Book turf near me
+- [x] Improve sports technique
+- [x] Sports rewards app
+
+### 2. On-Page Optimization
+- [x] **Title Tags:** Unique, keyword-rich titles implemented for all core pages.
+- [x] **Meta Descriptions:** Compelling summaries with primary keywords added.
+- [x] **Heading Structure:** Proper `h1`, `h2`, `h3` hierarchy used.
+- [x] **Semantic HTML:** `<header>`, `<nav>`, `<main>`, `<footer>` implemented.
+- [x] **Alt Text:** Descriptive alt text added to images.
+
+### 3. Technical SEO
+- [x] **Sitemap:** `sitemap.xml` created and accurate.
+- [x] **Robots.txt:** Correct crawling instructions in place.
+- [x] **Structured Data (Schema.org):** JSON-LD implemented for:
+    - [x] `Organization`
+    - [x] `WebSite`
+    - [x] `Blog` (on blog.html)
+
+## Performance Strategy (Pending)
+
+### 1. Lazy Loading
+- [ ] Implement `loading="lazy"` on all images below the fold.
+- [ ] Use `loading="eager"` for the LCP (Largest Contentful Paint) image (hero image).
+
+### 2. Image Dimensions
+- [ ] Explicitly set `width` and `height` attributes on `<img>` tags to prevent Cumulative Layout Shift (CLS).
+
+### 3. Modern Formats & Compression
+- [ ] Convert images to WebP format where possible.
+- [ ] Ensure existing PNG/JPGs are optimized.
+
+### 4. Resource Hints
+- [x] Use `<link rel="preconnect">` for Google Fonts.
+- [ ] Use `decoding="async"` for non-critical images.
+
+## Next Steps
+1. **Image Optimization**: Prioritize adding `loading="lazy"` and explicit dimensions to all images in `index.html` and `blog.html`.
+2. **Performance Testing**: Run Lighthouse audit after image optimizations.
